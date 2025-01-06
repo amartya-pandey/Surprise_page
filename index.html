@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <form id="id_val">
+          <label for="password">Password:</label>
+          <input type="text" id="pass" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p id="error-message" style="color: red; display: none;">Invalid password.</p>
+
+
+    <script>
+        const validpass = 'pass123';
+
+        document.getElementById('id_val').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const pass = document.getElementById('pass').value;
+
+        // Validate the credentials
+        if (pass === validpass) {
+            alert('You got it right');
+            window.location.href = 'surprise_page.html';
+        } else {
+            document.getElementById('error-message').style.display = 'block';
+        }
+        });
+
+    </script>
+
+</body>
+</html>
