@@ -3,8 +3,8 @@ import time
 from turtle import *
 
 
-name_ = "Amartya"
-crush_name = "Shreya"
+name_ = ""
+crush_name = ""
 def hearta(k):
     return 15*math.sin(k)**3
 
