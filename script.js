@@ -1,8 +1,8 @@
 // Add the right passwords for validation
-const validpass1 = '';
-const validpass2 = '';
-const validpass3 = '';
-const validpass4 = '';
+const validpass1 = ' ';
+const validpass2 = ' ';
+const validpass3 = ' ';
+const validpass4 = ' ';
 
 document.getElementById('id_val').addEventListener('submit', function(event) {
 event.preventDefault();
